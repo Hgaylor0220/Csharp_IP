@@ -1,10 +1,16 @@
 using System;
-namespace Bakery
+namespace products
 {
-    class Goods 
+    class pastrys 
     {
     public int Price { get; set;}
     public int Quanity { get; set;}
     
+    }
+    class bread
+    {
+        public int Price { get; set; }
+        public int Quanity { get; set; }
+
     }
 }
