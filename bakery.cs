@@ -48,7 +48,7 @@ namespace Products
 
         public int ReturnCost()
         {
-            // taking the price break and dividing it by the quantity of bread req. to calculate cost
+            
             int priceBreakTotal = Decimal.ToInt32(
                 quantity / PriceBreakAmount);
             int regularTotal = 
@@ -56,7 +56,7 @@ namespace Products
 
             int cost = (regularTotal * 
             Price) + (priceBreakTotal * 
-            PriceBreakPrice); // calculating the total cost
+            PriceBreakPrice);
             return cost;
         }
 
