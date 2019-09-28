@@ -10,17 +10,22 @@ namespace Products
         public int quantity;
 
         public Pastrys (int orderQuantity) {
-            this.quantity = orderQuantity;
+            
+            quantity = orderQuantity;
             Console.WriteLine("You want " + orderQuantity + " pastries.");
         }
 
         public int ReturnCost (){
-            int priceBreakTotal = Decimal.ToInt32(this.quantity / PriceBreakAmount);
+            int priceBreakTotal = Decimal.ToInt32(
+                quantity / PriceBreakAmount);
             Console.WriteLine("priceBreakTotal: " + priceBreakTotal);
-            int regularTotal = this.quantity - (priceBreakTotal * PriceBreakAmount);
+            int regularTotal = 
+            quantity - (priceBreakTotal * PriceBreakAmount);
             Console.WriteLine("regularTotal: " + regularTotal);
 
-            int cost = (regularTotal * this.Price) + (priceBreakTotal * this.PriceBreakPrice);
+            int cost = (regularTotal * 
+            Price) + (priceBreakTotal * 
+            PriceBreakPrice);
             Console.WriteLine("cost: " + cost);
             return cost;
         }
@@ -36,17 +41,22 @@ namespace Products
 
         public Bread(int orderQuantity)
         {
-            this.quantity = orderQuantity;
+            
+            quantity = orderQuantity;
             Console.WriteLine("You want " + orderQuantity + " loaves of bread.");
         }
 
         public int ReturnCost()
         {
             // taking the price break and dividing it by the quantity of bread req. to calculate cost
-            int priceBreakTotal = Decimal.ToInt32(this.quantity / PriceBreakAmount);
-            int regularTotal = this.quantity - (priceBreakTotal * PriceBreakAmount);
+            int priceBreakTotal = Decimal.ToInt32(
+                quantity / PriceBreakAmount);
+            int regularTotal = 
+            quantity - (priceBreakTotal * PriceBreakAmount);
 
-            int cost = (regularTotal * this.Price) + (priceBreakTotal * this.PriceBreakPrice); // calculating the total cost
+            int cost = (regularTotal * 
+            Price) + (priceBreakTotal * 
+            PriceBreakPrice); // calculating the total cost
             return cost;
         }
 
