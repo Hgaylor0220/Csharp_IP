@@ -1,0 +1,14 @@
+Scenerio: User is presented with specials for pastrys and asked to make a purchase.
+when User is promted to visit the bakery
+given the user enters 'y' for yes
+It will return ask the user for the amount of pastrys.
+
+Scenerio: User enters ampount of specified pastrys.
+when the users enters a amount
+given the amount is numerical
+It will  ask the user for the amount of loafs of bread the user would like.
+
+Scenerio: users enters the amount of bread loafs.
+when User is promted y
+given the user enters a numerical amount
+It will return the price of pastrys and bread loafs with the discounted price.
