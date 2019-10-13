@@ -3,9 +3,9 @@ namespace Products
 {
     class Pastrys 
     {
-        private int Price = 2;
-        private int PriceBreakAmount = 3;
-        private int PriceBreakPrice = 5;
+        public int Price {get; set;} = 2;
+        public int PriceBreakAmount{get; set;} = 3;
+        public int PriceBreakPrice{get; set;} = 5;
 
         public int quantity;
 
